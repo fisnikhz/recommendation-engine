@@ -18,4 +18,5 @@ public class RecommendationController {
     public List<Map.Entry<Long, Double>> getRecommendations(@PathVariable Long userId) {
         return recommendationService.recommendVideos(userId);
     }
+
 }

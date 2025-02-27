@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 public class RatingMatrixService {
@@ -27,16 +26,4 @@ public class RatingMatrixService {
         return ratingMatrix;
 
     }
-
-//    public List<UserActions> getUserActionsByUserId(Long userId) {
-//        return userActionRepository.findByUserId(userId);
-//    }
-//
-//    public List<UserActions> getUserActionsByPostId(Long postId) {
-//        return userActionRepository.findByPostId(postId);
-//    }
-//
-//    public Integer getRatingByUserIdAndPostId(Long userId, Long postId) {
-//        return userActionRepository.findRatingByUserIdAndPostId(userId, postId);
-//    }
 }

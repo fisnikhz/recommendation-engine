@@ -28,6 +28,7 @@ public class VideoTags {
  @Column(name = "updated_at", nullable = false)
  private LocalDateTime updatedAt;
 
+
  // Getters and Setters
 
  public Long getId() {
