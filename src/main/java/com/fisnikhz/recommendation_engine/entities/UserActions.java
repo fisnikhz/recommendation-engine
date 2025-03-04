@@ -22,15 +22,11 @@ public class UserActions {
 
     @Column(name = "user_id", nullable = false)
     private String userId;
-
-    @Column(nullable = false)
-    private String type;
+    
 
     @Column(nullable = false)
     private String score;
 
-    @Column
-    private String content;
 
     @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
@@ -54,18 +50,11 @@ public class UserActions {
         this.videoId = videoId;
     }
 
-    public String getType() {
-        return type;
-    }
 
     public String getUserId() {return userId;}
 
     public void setUserId(String userId) {
         this.userId = userId;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public String getScore() {
@@ -76,13 +65,6 @@ public class UserActions {
         this.score = score;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
